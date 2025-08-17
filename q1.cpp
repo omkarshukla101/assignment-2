@@ -18,7 +18,7 @@ int binarysearch(int arr[],int target,int size){
 }
 int main(){
     int arr[]={1,2,3,4,5,6,7};
-    int size=sizeof(arr);
+    int size=sizeof(arr)/sizeof(arr[0]);
     int target=6;
     int index=binarysearch(arr,target,size);
     cout<<"the element has been found at the index:"<<index;
